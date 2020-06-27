@@ -29,7 +29,7 @@ namespace DummyAkkaTest
             // 註:需安裝Akka DI Extension
             actorSystem.UseServiceProvider(Configure.provider);
 
-            // create an instance of the actor
+            // Create an instance of the actor
             var actor = actorSystem.ActorOf(actorSystem.DI().Props<NotificationActor>(), "main-actor");
 
 
